@@ -17,12 +17,11 @@ function visual_button() {
 	wp_enqueue_script( 'button-query', get_stylesheet_directory_uri() . '/js/visual.save.js', array( 'jquery' ), null, false );
 }
 
-//slot styling for button into admin pages - note, must also add to the stylesheet for it to carry to the non-admin pages
+//slot styling for button into admin pages - note, must also add to the stylesheet for it to carry to the non-admin pages - I also changed the background-color: green; to make more visible
 function admin_button_styling() {
 	echo ' <style>
 #wpadminbar li.shd-button-class--save {
 	display: none;
-	background-color: green;
 }
 </style>';
 }
