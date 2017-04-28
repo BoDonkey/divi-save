@@ -1,6 +1,6 @@
 <?php
 //add button to admin bar
-function custom_button_example($wp_admin_bar){
+function shd_custom_button_example( $wp_admin_bar ) {
 	$args = array(
 		'id' => 'shd-divi-save-button',
 		'title' => 'Save',
@@ -10,7 +10,7 @@ function custom_button_example($wp_admin_bar){
 		);
 	$wp_admin_bar->add_node($args);
 }
-add_action('admin_bar_menu', 'custom_button_example', 1500);
+add_action( 'admin_bar_menu', 'custom_button_example', 1500 );
 
 //add script for button function
 function visual_button() {
@@ -25,4 +25,4 @@ function admin_button_styling() {
 }
 </style>';
 }
-add_action('admin_head', 'admin_button_styling');
+add_action( 'admin_head', 'admin_button_styling' );
